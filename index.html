@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUM Game</title>
+
+    <style>
+        body{
+            background: linear-gradient(135deg, #5ee7df, #b490ca);
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #bigbox{
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        #bigbox:hover{
+            transform: scale(1.02);
+        }
+
+        h1{
+            color: #ff5733;
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 18px;
+        }
+
+        a{
+            display: inline-block;
+            background-color: #7c3aed;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+
+        a:hover{
+            background-color: #5b21b6;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="bigbox">
+        <h1>BUMMMM Game 🤭</h1>
+        <p>Click the button to start playing! 😁</p>
+
+        <a href="g.html" id="goBtn">Go NOW</a>
+
+        <audio id="clickSound">
+            <source src="lets-go-on-the-walkie-talkie.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        document.getElementById("goBtn").addEventListener("click", function() {
+            document.getElementById("clickSound").play();
+        });
+    </script>
+
+</body>
+</html>

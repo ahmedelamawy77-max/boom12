@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #8fd3f4, #84fab0);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* الصندوق */
+#container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* العنوان */
+h1 {
+    margin: 0 0 10px;
+}
+
+/* الوصف */
+.desc {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* انبوت */
+input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #6c63ff;
+    outline: none;
+    font-size: 16px;
+}
+
+/* زرار */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #5148e5;
+}
+
+/* الرسالة */
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 30px;
+}
+
+/* العداد */
+#counter {
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 8px;
+    background: #f3f3f3;
+    border-radius: 10px;
+}
+
+/* صندوق الأنيميشن */
+#animBox {
+    margin-top: 20px;
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+/* أنيميشن Boom */
+.boom {
+    background: red;
+    animation: boomAnim .6s;
+}
+@keyframes boomAnim {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: .5; }
+    100% { transform: scale(0); opacity: 0; }
+}
+
+/* Safe */
+.safe {
+    background: green;
+    animation: safeAnim .6s;
+}
+@keyframes safeAnim {
+    0% { opacity: 0; transform: scale(.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Angry */
+.angry {
+    background: yellow;
+    animation: angryAnim .6s;
+}
+@keyframes angryAnim {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(12deg); }
+    100% { transform: rotate(-12deg); }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUM Game</title>
+    <link rel="stylesheet" href="g.css">
+    <style>
+</style>
+</head>
+<body>
+
+    <div id="container">
+        <h1>BUM NUMBER 🤭</h1>
+        <p class="desc">Thinking of a number between 1 and 100</p>
+
+        <input type="text" id="inputg" placeholder="Your number">
+        <button onclick="button()">Guess</button>
+
+        <p id="message"></p>
+
+        <p id="counter">Safe: 0 | Boom: 0</p>
+
+        <div id="animBox"></div>
+    </div>
+
+    <audio id="winSound" src="safe.mp3"></audio>
+<audio id="loseSound" src="boom.mp3"></audio>
+
+    <script src="g.js">
+</script>
+</body>
+</html>
